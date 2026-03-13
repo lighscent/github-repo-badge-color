@@ -1,12 +1,13 @@
-# GitHub Repo Visibility Color
+# GRBC - GitHub Repo Badge Color
 
-A simple browser extension that colors repository visibility badges on GitHub.
+A simple browser extension that adds colors to GitHub repository badges.
 
 ## Features
 
 - **Public repositories**: Green border and text
 - **Private repositories**: Red border and text
-- **Real-time updates**: Automatically applies styles when navigating between GitHub pages without requiring a page refresh
+- **Public template repositories**: Cornflower blue border and text
+- **Instant updates**: Uses `requestAnimationFrame` and a MutationObserver to apply styles instantly when navigating GitHub, without any visual delay.
 
 ## Installation
 
