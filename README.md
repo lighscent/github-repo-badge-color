@@ -4,7 +4,7 @@ A simple browser extension that adds colors to GitHub repository badges.
 
 | Before | After |
 | :---: | :---: |
-| <img src="imgs/chrome_D1b5J0h1uG.png" alt="Before" width="300"> | <img src="imgs/chrome_YMzHmccx7l.png" alt="After" width="300"> |
+| <img src="imgs/chrome_D1b5J0h1uG.png" alt="Before" width="400"> | <img src="imgs/chrome_YMzHmccx7l.png" alt="After" width="400"> |
 
 ## Features
 
