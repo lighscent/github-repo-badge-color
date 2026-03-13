@@ -1,5 +1,5 @@
 function applyStyles() {
-    const badges = document.querySelectorAll('span.Label');
+    const badges = document.querySelectorAll('span.Label, span.prc-Label-Label-qG-Zu');
     badges.forEach(badge => {
         const text = badge.textContent.trim();
         if (text === 'Public') {
@@ -8,15 +8,18 @@ function applyStyles() {
         } else if (text === 'Private') {
             badge.style.border = '2px solid red';
             badge.style.color = 'red';
+        } else if (text === 'Public template') {
+            badge.style.border = '2px solid cornflowerblue';
+            badge.style.color = 'cornflowerblue';
         }
     });
 }
 
 applyStyles();
 
-let debounceTimer;
+let debounceFrame;
 const observer = new MutationObserver(() => {
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(applyStyles, 300);
+    cancelAnimationFrame(debounceFrame);
+    debounceFrame = requestAnimationFrame(applyStyles);
 });
 observer.observe(document.body, { childList: true, subtree: true });
