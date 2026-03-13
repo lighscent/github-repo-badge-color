@@ -1,10 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "GitHub Repo Visibility Color",
+    "name": "GRBC - GitHub Repo Badge Color",
     "author": "xl1te (lighscent)",
-    "version": "1.0",
-    "description": "Colors repository visibility badges on GitHub.",
-    "repository": "https://github.com/lighscent/github-repo-visibility-color",
+    "version": "1.1",
+    "description": "Add colors to GitHub repository badges.",
     "permissions": [
         "scripting"
     ],
@@ -16,7 +15,7 @@
             "js": [
                 "content.js"
             ],
-            "run_at": "document_idle"
+            "run_at": "document_end"
         }
     ]
 }
