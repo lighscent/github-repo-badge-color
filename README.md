@@ -1,3 +1,5 @@
+# Moved to https://github.com/lighscent/githubplus
+
 # GRBC - GitHub Repo Badge Color
 
 A simple browser extension that adds colors to GitHub repository badges. 
